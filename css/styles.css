@@ -1,0 +1,443 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cfc493;
+    color: #005432;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #005432;
+    color: #dbc442;
+    padding: 1em;
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+header h1 {
+    margin: 0;
+
+}
+
+/* Default link styling in header */
+header nav a {
+    color: white;
+    /* Default link color (white) */
+    text-decoration: none;
+    /* Removes underline */
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Hover effect for links */
+header nav a:hover {
+    color: #dbc442;
+    /* Changes color to gold on hover */
+    text-decoration: none;
+    /* No underline on hover */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#intro {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+/* INDEX PAGE */
+/* Styles the Ferris wheel pic on the Index page */
+.pic_3 {
+    border: 5px solid #005432;
+    /* Sets the border color */
+    border-radius: 8px;
+    /* Rounds the corners of the image */
+    display: block;
+    /* Centers the image */
+    margin: 1em auto;
+    /* Adds spacing and centers the image horizontally */
+    width: 80%;
+    /* Makes the image scale to its container */
+    max-width: 300px;
+    /* Optional: limits max width if the image container is large */
+    height: auto;
+    /* Maintains aspect ratio */
+    transform: scale(1.1);
+    /* Increases size by 100% (1.1 scales to 110%) */
+}
+
+/* Styles the Cape Canaveral (Pic_9) pic on Index page and Pic_0 on the About Me page */
+.james {
+    max-width: 80%;
+    /* Reduce the max width to 80% of its container */
+    height: auto;
+    /* Maintain aspect ratio */
+    max-height: 400px;
+    /* Reduce the max height to 300px */
+    border: 5px solid #005432;
+    /* Keeps the border styling */
+    border-radius: 10px;
+    /* Rounds the corners */
+    display: block;
+    /* Centers the image */
+    margin: 1em auto;
+    /* Centers and adds space around the image */
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+    .james {
+        max-width: 80%;
+        /* Allow the image to use more space on smaller screens */
+        max-height: 250px;
+        /* Adjust max height */
+    }
+}
+
+/* For phones */
+@media (max-width: 480px) {
+    .james {
+        max-width: 90%;
+        /* Almost full width on very small screens */
+        max-height: 200px;
+        /* Further reduce height */
+    }
+}
+
+/* ABOUT ME PAGE */
+.about-section {
+    background-color: #005432;
+    /* Sets the background color */
+    border-color: #dbc442;
+    border-radius: 8px;
+    /* Rounded corners */
+    padding: 1em;
+    /* Adds spacing inside the section */
+}
+
+/* About Me text color and behavior */
+.about-section h2 a {
+    color: #6F4E37;
+    /* Changes text color of the About Me link___Delete if possible */
+    text-decoration: none;
+    /* Omits underline */
+}
+
+.about-section h1 a:hover {
+    text-decoration: none;
+    /* Omits underline on hover */
+}
+
+/* James Image Styling (About Me page) */
+.about-james {
+    color: #005432;
+    /* Dark brown color */
+    text-align: center;
+    /* Centers the heading */
+    margin-bottom: 1em;
+    /* Adds space below the heading */
+}
+
+/* This stlyes the LinkedIn link */
+.about-link {
+    color: white;
+    /* Default text color */
+    text-decoration: none;
+    /* No underline */
+    background-color: #005432;
+    /* Dark green button */
+    padding: 15px;
+    /* Adds padding for button effect */
+    border: 4px solid #dbc442;
+    /* Gold border */
+    border-radius: 20px;
+    /* Rounded corners */
+    display: inline-block;
+    /* Makes the link behave like a button */
+    font-weight: bold;
+    /* Bold text */
+    transition: background-color 0.3s ease, color 0.6s ease;
+    /* Smooth hover effect */
+    text-align: center;
+    /* Centers the button text */
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.about-link:hover {
+    background-color: #dbc442;
+    /* Gold background on hover */
+    color: #005432;
+    /* Green text on hover */
+    border: 4px solid #6F4E37;
+    /* Brownish border on hover */
+}
+
+.linkedin-button {
+    display: flex;
+    justify-content: center;
+}
+
+/* Page Summary Styling */
+#overview {
+    margin-top: 2em;
+}
+
+/* Button boxes at the bottom of the Index page*/
+.page-summary {
+    background-color: #6F4E37;
+    /* Sets the background to brown. */
+    padding: 1em;
+    /* Adds space inside the box, creating some distance between the content and the box's edges. */
+    margin-bottom: 2em;
+    /* Adds space below the box, separating it from the next section. */
+    border-radius: 8px;
+    /* Rounds the corners of the box. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adds a shadow for a subtle 3D effect. */
+    overflow: auto;
+    /* Ensures content inside the box doesn’t overflow. */
+}
+
+
+.page-summary h3 a {
+    background-color: #005432;
+    /* Dark green background for the link box. */
+    border: 2px solid #dbc442;
+    color: white;
+    /* White text for high contrast. */
+    text-decoration: none;
+    /* Removes underline from links. */
+    padding: 0.5em 1em;
+    /* Creates padding around the text, giving it a button-like appearance. */
+    border-radius: 8px;
+    /* Rounds the corners of the link. */
+    display: inline-block;
+    /* Makes the link behave like a button. */
+}
+
+
+.page-summary h3 a:hover {
+    background-color: #004025;
+    /* Changes to a slightly darker green on hover. */
+    color: #dbc442;
+    /* Changes the text color on hover. */
+}
+
+.page-summary p {
+    color: white;
+    /* Sets the paragraph text color to white for readability. */
+    margin-top: 0.5em;
+    /* Adds space above paragraphs within the summary box. */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #FF914D;
+    color: white;
+    margin-top: 2em;
+}
+
+/* Form Styling (Your Vacation Destination page) */
+.vacation-image {
+    max-width: 80%;
+    /* Ensures image doesn't exceed container width */
+    max-height: 200px;
+    /* Limits height to 500px */
+    height: auto;
+    /* Maintains aspect ratio */
+    width: auto;
+    /* Adjust width automatically */
+    display: block;
+    /* Ensures proper alignment */
+    margin: 0 auto;
+    /* Centers the image horizontally */
+}
+
+.wishlist-heading {
+    color: #6F4E37;
+    /* Changes the main heading color */
+}
+
+.wishlist-subheading {
+    color: #6F4E37;
+    /* Changes the subheading color */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input,
+form button {
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #005432;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    color: #dbc442;
+    background-color: #004025;
+    /* Slightly darker green on hover */
+}
+
+/* Analytics Styling (Analytics page) */
+/* Chart Container */
+canvas {
+    margin: 0 auto;
+    display: block;
+    max-width: 90%;
+}
+
+/* Image Container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1em 0;
+}
+
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f9; */
+    color: #333;
+}
+
+header h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.wishlist-heading,
+.wishlist-subheading {
+    text-align: center;
+    color: #555;
+}
+
+#form-section,
+#vacation_list {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Vacation List Styling */
+#VacationList {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Card Style for Each Vacation Item */
+.vacation-item {
+    background-color: #dbc442;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+.vacation-item:hover {
+    transform: translateY(-5px);
+}
+
+.vacation-item strong {
+    font-size: 1.2em;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Detail Text Styling */
+.vacation-item p {
+    margin: 8px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Buttons within Each Vacation Item */
+.vacation-item button {
+    margin-right: 10px;
+    padding: 5px 15px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Edit Button Style */
+.vacation-item button.edit-btn {
+    background-color: #28a745;
+}
+
+.vacation-item button.edit-btn:hover {
+    background-color: #218838;
+}
+
+/* Delete Button Style */
+.vacation-item button.delete-btn {
+    background-color: #dc3545;
+}
+
+.vacation-item button.delete-btn:hover {
+    background-color: #c82333;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Vacations</h1>
+        <br>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="yourvacations.html">Your Vacation Destinations</a>
+            <a href="analytics.html">Analytics</a>
+        </nav>
+    </header>
+    <main>
+        <h2 class="wishlist-heading">Build your destination wishlist</h2>
+        <div class="image-container">
+            <img src="img/Pic_1.jpg" alt="places" class="vacation-image">
+        </div>
+        <section id="form-section">
+            <form id="wishlist-form">
+                <label for="destination_name">Destination Name</label>
+                <input type="text" id="destination_name" placeholder="Destination Name" required>
+
+                <label for="start_date">Vacation Start Date</label>
+                <input type="date" id="start_date" placeholder="Vacation Start Date" required>
+
+                <label for="end_date">Vacation End Date</label>
+                <input type="date" id="end_date" placeholder="Vacation End Date" required>
+
+                <label for="number_of_people">Number of People Going With You</label>
+                <input type="number" id="number_of_people" placeholder="How many friends/family do you have?" required>
+
+                <label for="budget">Estimated Budget</label>
+                <input type="number" id="budget" placeholder="($)" required>
+
+                <button type="button" onclick="create_vacation()">Add Vacation</button>
+                <button type="button" onclick="update_vacation()" id="updateBtn" style="display: none;">Update your
+                    vacation wishlist</button>
+            </form>
+        </section>
+        <section id="vacation_list">
+            <br>
+            <h4 class="wishlist-subheading">Your vacation destination wishlist</h4>
+            <ul id="VacationList"></ul>
+        </section>
+    </main>
+</body>
+
+</html>
